@@ -91,9 +91,9 @@ function App() {
     },
     {
         id: 12,
-        fullName: "Mayank Bansal",
+        fullName: "Aakash Gole",
         designation: "Graphic Designer",
-        gender: "male",
+        gender: "shemale",
         teamName: "TeamD"
     }])
 
@@ -118,7 +118,7 @@ function App() {
         setEmployees(transformedEmployees)
     }
     return (<Router>
-        <Nav/>
+        <Nav />
         <Header selectedTeam={selectedTeam}
             teamMemberCount={employees.filter((employee) => employee.teamName === selectedTeam).length}
         />
@@ -128,7 +128,7 @@ function App() {
             }>
             </Route>
             <Route path='/GroupedTeamMembers' element={<GroupedTeamMembers employees={employees} selectedTeam={selectedTeam} setTeam={setTeam} />}></Route>
-            <Route path='*' element={<NotFound/>}></Route>
+            <Route path='*' element={<NotFound />}></Route>
         </Routes>
         <Footer />
     </Router>
